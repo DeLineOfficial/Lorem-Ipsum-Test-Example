@@ -1,0 +1,42 @@
+.register-order {
+    padding: 150px 0;
+    background-image: url('../img/bg-reg.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    .wrapper-container {
+        flex-direction: column;
+
+
+        > p {
+            margin: 30px auto;
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+    .register-order_title {
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-size: 36px;
+        color: white;
+        font-weight: 700;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .register-order {
+        padding: 60px 0 !important;
+
+        .wrapper-container {
+            align-items: center;
+        }
+    }
+}

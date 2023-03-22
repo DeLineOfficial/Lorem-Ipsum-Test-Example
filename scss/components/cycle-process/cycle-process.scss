@@ -1,0 +1,123 @@
+.cycle-process {
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    
+    .cycle-process-els {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+
+        .cycle-process_el {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            >p {
+                width: 170px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                color: white;
+                margin: 30px auto 0 auto;
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: #286690;
+
+                >div {
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 50%;
+                    background: $primary-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                } 
+            }
+        }
+
+        .cycle-process_way {
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-around;
+            width: 80px;
+
+            div {
+                height: 6px;
+                width: 6px;
+                border-radius: 50%;
+                background: white;
+            }
+
+           
+            
+        }
+                    
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .cycle-process-els {
+
+    
+        p {
+            max-width: 130px;
+            font-size: 12px;
+        }
+
+        .item {
+            height: 80px !important;
+            width: 80px !important;
+
+            div {
+                height: 70px !important;
+                width: 70px !important;
+
+                img {
+                    max-width: 50%;
+                }
+
+            }
+        }
+
+        .cycle-process_way {
+            div:nth-child(even) {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .cycle-process_way {
+        min-width: 80px;
+    }
+    .cycle-process-els {
+        overflow-x: scroll;
+        p {
+            margin-top: 15px !important;
+            max-width: 130px;
+            font-size: 12px;
+        }
+        .item {
+            height: 60px;
+            width: 60px;
+
+            div {
+                height: 45px;
+                width: 45px;
+            }
+        }
+    }
+}
